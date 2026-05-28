@@ -1,5 +1,7 @@
 # zero_to_hero_mobile_dev
 
-✅ Day 1 — Completed
+✅ Day 11 — Completed
 
-✅ Day 2 — Completed
+✅ Day 12 — Completed
+
+✅ Day 13 — Completed
