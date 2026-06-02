@@ -4,7 +4,8 @@ import 'package:flutter/material.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_13_layout_widgets.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_14_containers_and_styling.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_15_row_column_stack.dart';
-import 'package:zero_to_hero_mobile_dev/flutter_phase/day_16_navigation/home_scree.dart';
+// import 'package:zero_to_hero_mobile_dev/flutter_phase/day_16_navigation/home_scree.dart';
+import 'package:zero_to_hero_mobile_dev/flutter_phase/day_17_form_and_user_input/sign_up_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const HomeScree(),
+      home: const SignUpScreen(),
     );
   }
 }
