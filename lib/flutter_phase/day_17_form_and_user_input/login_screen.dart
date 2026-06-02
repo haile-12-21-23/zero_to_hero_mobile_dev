@@ -39,6 +39,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
                 child: CircleAvatar(child: Icon(Icons.person, size: 110)),
               ),
+              const SizedBox(height: 30),
               TextFormField(
                 controller: emailController,
                 decoration: InputDecoration(
