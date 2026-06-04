@@ -6,7 +6,8 @@ import 'package:flutter/material.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_15_row_column_stack.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_16_navigation/home_scree.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_17_form_and_user_input/sign_up_screen.dart';
-import 'package:zero_to_hero_mobile_dev/flutter_phase/day_18_custom_widgets/custom_widgets_screen.dart';
+// import 'package:zero_to_hero_mobile_dev/flutter_phase/day_18_custom_widgets/custom_widgets_screen.dart';
+import 'package:zero_to_hero_mobile_dev/flutter_phase/day_19_list_view_and_grid_view/product_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
         
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: const CustomWidgetsScreen(),
+      home: ProductScreen(),
     );
   }
 }
