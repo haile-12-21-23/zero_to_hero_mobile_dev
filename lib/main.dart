@@ -9,9 +9,10 @@ import 'package:flutter/material.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_18_custom_widgets/custom_widgets_screen.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_19_list_view_and_grid_view/product_screen.dart';
 import 'package:zero_to_hero_mobile_dev/flutter_phase/day_20_image_and_assets/gallery_screen.dart';
+import 'package:zero_to_hero_mobile_dev/flutter_phase/day_21_theme/theme_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ThemeScreen());
 }
 
 class MyApp extends StatelessWidget {
