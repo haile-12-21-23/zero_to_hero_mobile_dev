@@ -8,11 +8,12 @@ import 'package:flutter/material.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_17_form_and_user_input/sign_up_screen.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_18_custom_widgets/custom_widgets_screen.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_19_list_view_and_grid_view/product_screen.dart';
-import 'package:zero_to_hero_mobile_dev/flutter_phase/day_20_image_and_assets/gallery_screen.dart';
-import 'package:zero_to_hero_mobile_dev/flutter_phase/day_21_theme/theme_screen.dart';
+// import 'package:zero_to_hero_mobile_dev/flutter_phase/day_20_image_and_assets/gallery_screen.dart';
+// import 'package:zero_to_hero_mobile_dev/flutter_phase/day_21_theme/theme_screen.dart';
+import 'package:zero_to_hero_mobile_dev/flutter_phase/day_22_flutter_packages/flutter_packages_screen.dart';
 
 void main() {
-  runApp(const ThemeScreen());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
         
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: GalleryScreen(),
+      home: FlutterPackagesScreen(),
     );
   }
 }
