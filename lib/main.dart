@@ -12,7 +12,8 @@ import 'package:flutter/material.dart';
 // // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_21_theme/theme_screen.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_22_flutter_packages/flutter_packages_screen.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_23_animation_basics/animation_screen.dart';
-import 'package:zero_to_hero_mobile_dev/flutter_phase/day_24_responsive_design/responsive_screen.dart';
+// import 'package:zero_to_hero_mobile_dev/flutter_phase/day_24_responsive_design/responsive_screen.dart';
+import 'package:zero_to_hero_mobile_dev/state_management_phase/day_26_state_management_intro/counter_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: ResponsiveScreen(),
+      home: CounterApp(),
     );
   }
 }

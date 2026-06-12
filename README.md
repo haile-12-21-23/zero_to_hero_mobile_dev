@@ -27,3 +27,7 @@
 ✅ Day 23 — Completed
 
 ✅ Day 24 — Completed
+
+✅ Day 25  — InProgress
+
+✅ Day 26  — Completed
