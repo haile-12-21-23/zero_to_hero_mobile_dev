@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_11_flutter_setup.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_12_widgets_basics.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_13_layout_widgets.dart';
@@ -13,10 +14,17 @@ import 'package:flutter/material.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_22_flutter_packages/flutter_packages_screen.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_23_animation_basics/animation_screen.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_24_responsive_design/responsive_screen.dart';
-import 'package:zero_to_hero_mobile_dev/state_management_phase/day_26_state_management_intro/counter_app.dart';
+// import 'package:zero_to_hero_mobile_dev/state_management_phase/day_26_state_management_intro/counter_app.dart';
+import 'package:zero_to_hero_mobile_dev/state_management_phase/day_27_provider_and_riverpod/providers/counter_provider.dart';
+import 'package:zero_to_hero_mobile_dev/state_management_phase/day_27_provider_and_riverpod/views/counter_screen.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => CounterProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -31,7 +39,7 @@ class MyApp extends StatelessWidget {
         
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: CounterApp(),
+      home: CounterScreen(),
     );
   }
 }
