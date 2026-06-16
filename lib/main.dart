@@ -16,7 +16,8 @@ import 'package:provider/provider.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_24_responsive_design/responsive_screen.dart';
 // import 'package:zero_to_hero_mobile_dev/state_management_phase/day_26_state_management_intro/counter_app.dart';
 import 'package:zero_to_hero_mobile_dev/state_management_phase/day_27_provider_and_riverpod/providers/counter_provider.dart';
-import 'package:zero_to_hero_mobile_dev/state_management_phase/day_27_provider_and_riverpod/views/counter_screen.dart';
+// import 'package:zero_to_hero_mobile_dev/state_management_phase/day_27_provider_and_riverpod/views/counter_screen.dart';
+import 'package:zero_to_hero_mobile_dev/state_management_phase/day_28_http_requests/user_screen.dart';
 
 void main() {
   runApp(
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
         
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: CounterScreen(),
+      home: UserScreen(),
     );
   }
 }
