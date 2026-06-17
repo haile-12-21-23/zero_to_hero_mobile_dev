@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:provider/provider.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_11_flutter_setup.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_12_widgets_basics.dart';
@@ -15,17 +16,19 @@ import 'package:provider/provider.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_23_animation_basics/animation_screen.dart';
 // import 'package:zero_to_hero_mobile_dev/flutter_phase/day_24_responsive_design/responsive_screen.dart';
 // import 'package:zero_to_hero_mobile_dev/state_management_phase/day_26_state_management_intro/counter_app.dart';
-import 'package:zero_to_hero_mobile_dev/state_management_phase/day_27_provider_and_riverpod/providers/counter_provider.dart';
+// import 'package:zero_to_hero_mobile_dev/state_management_phase/day_27_provider_and_riverpod/providers/counter_provider.dart';
+import 'package:zero_to_hero_mobile_dev/state_management_phase/day_30_authentication_ui/screens/login_screen.dart';
+import 'package:zero_to_hero_mobile_dev/state_management_phase/day_30_authentication_ui/screens/register_screen.dart';
 
-import 'state_management_phase/day_29_json_parsing/screens/user_screen.dart'
-    show UserScreen;
+// import 'state_management_phase/day_29_json_parsing/screens/user_screen.dart'
+// show UserScreen;
 // import 'package:zero_to_hero_mobile_dev/state_management_phase/day_27_provider_and_riverpod/views/counter_screen.dart';
 // import 'package:zero_to_hero_mobile_dev/state_management_phase/day_28_http_requests/user_screen.dart';
 
 void main() {
   runApp(
-    ChangeNotifierProvider(
-      create: (_) => CounterProvider(),
+    ProviderScope(
+      
       child: const MyApp(),
     ),
   );
@@ -43,7 +46,7 @@ class MyApp extends StatelessWidget {
         
         colorScheme: .fromSeed(seedColor: Colors.deepPurple),
       ),
-      home: UserScreen(),
+      home: RegisterScreen(),
     );
   }
 }
